@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+  /* Variables */
+  --font-primary: 'Poppins', sans-serif;
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+
+  --color-light: #fff;
+  --color-light-alt: #afb6cd;
+  --color-bg-primary: #131417;
+  --color-bg-secondary: #252830;
+  --color-hover-lt: var(--color-light);
+  --color-hover-dk: var(--color-bg-primary);
+  --color-transparent-lt: rgba(255, 255, 255, .05);
+  --color-transparent-dk: rgba(0, 0, 0, .75);
+}
+
+/* Simple reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  /* base size = 10px for ease of use */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  color: var(--color-light-alt);
+  background-color: var(--color-bg-primary);
+  letter-spacing: 1px;
+  transition: background-color .25s, color .25s;
+}
+
+footer p {
+  font-size: var(--font-size-xsm);
+}
+
+
+
