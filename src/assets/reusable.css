@@ -1,0 +1,23 @@
+.container {
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.place-items-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  padding-block: 5rem;
+}
+
+.d-grid{
+  display: grid;
+}
+
+.screen-sm-hidden{
+  display: none;
+}

@@ -1,0 +1,26 @@
+@media screen and (min-width: 1024px) {
+  .menu{
+    position: static;
+    width: initial;
+    padding: initial;
+    background-color: transparent;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .menu > .list{
+    flex-direction: row;
+  }
+
+  .screen-lg-hidden{
+    display: none;
+  }
+
+  .screen-sm-hidden{
+    display: block;
+  }
+
+  .sign-up-btn{
+    padding: 4px;
+  }
+}
