@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- App script -->
+    <script type="module" src="src/app.js" defer></script>
     <title>Devz</title>
   </head>
   <body data-theme="">
@@ -58,12 +60,50 @@
       </div>
     </header>
 
-    <main id="app">
-      <h1>Hello World!</h1>
-    </main>
-    <script type="module" src="src/app.js"></script>
+    <main id="app"></main>
+
     <footer>
       <p>Copyright &copy; LuKa, <span id="thisyear"></span></p>
     </footer>
+
+    <template id="home-page-template">
+      <div class="page">
+        <section class="section section-header-offset">
+          <div class="container">
+            <h2 class="title section-title">Home</h2>
+          </div>
+        </section>
+      </div>
+    </template>
+
+    <template id="blog-page-template">
+      <div class="page">
+        <section class="section section-header-offset">
+          <div class="container">
+            <h2 class="title section-title">Blog</h2>
+          </div>
+        </section>
+      </div>
+    </template>
+
+    <template id="resources-page-template">
+      <div class="page">
+        <section class="section section-header-offset">
+          <div class="container">
+            <h2 class="title section-title">Resources</h2>
+          </div>
+        </section>
+      </div>
+    </template>
+
+    <template id="about-page-template">
+      <div class="page">
+        <section class="section section-header-offset">
+          <div class="container">
+            <h2 class="title section-title">About</h2>
+          </div>
+        </section>
+      </div>
+    </template>
   </body>
 </html>

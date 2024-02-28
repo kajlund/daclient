@@ -13,10 +13,15 @@ Website vanilla.js client
 	- [x] Replace Vite generated stuff with Hello World page with working css and js
 	- [x] Create git repo local and remote, add * and push initial commit
 	- [x] Add README
-- [ ] Add Menu section
+- [x] Add Menu section
   - [x] Add brand and main menu
   - [x] Add popup menu for small screens
   - [x] Add functionality for dark/light modes
-- [ ] Add dummy page navigation
-  - [ ]
+- [ ] Add page navigation
+  - [x] Add a [page](https://github.com/visionmedia/page.js/) router.
+  - [x] Add templates and webcomponent skeletons for pages
+  - [ ] Add global state handler
+  - [ ] Fix currentPage display in UI
+
+- [ ] Add login dialog
 

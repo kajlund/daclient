@@ -1,7 +1,16 @@
+import router from 'page'
+import routes from './routes'
+
 import "./style.css";
 import "./assets/reusable.css"
 import "./assets/header.css"
 import "./assets/media.css"
+
+// Import page elements
+import './pages/HomePage.js'
+import './pages/BlogPage.js'
+import './pages/ResourcesPage.js'
+import './pages/AboutPage.js'
 
 // Generic selector function to throw error if bad query
 const selectElement = (selector) => {
@@ -19,7 +28,6 @@ window.addEventListener('scroll', () => {
     navbarElement.classList.remove('activated');
   }
 });
-
 
 // Set copyright year to current year
 selectElement("#thisyear").innerText = new Date().getFullYear()
@@ -51,3 +59,31 @@ themeToggleBtn.addEventListener('click', () => {
     localStorage.removeItem('currentTheme');
   }
 });
+
+// Routing
+let page;
+let params;
+const appElement = selectElement("#app")
+routes.forEach(route => {
+  router(
+    route.path,
+    (ctx, next) => {
+      params = ctx.params;
+      next();
+    },
+    () => {
+      if (page) {
+        //appElement.firstChild.classList.remove('activated');
+        appElement.innerHTML = "";
+      }
+      page = document.createElement(route.component);
+      if (page) {
+        appElement.appendChild(page);
+        //appElement.firstChild.classList.add('activated');
+      }
+      // nav.setActivePage(route.pageId)
+      console.log('page: ', route.pageId, page, params)
+    }
+  )
+})
+router.start()
